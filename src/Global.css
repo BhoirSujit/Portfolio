@@ -18,9 +18,6 @@ body {
   color: var(--text-primary);
 }
 
-.visibleimp {
-  display: block !important;
-}
 
 ul.handles li a svg {
   width: 2rem;

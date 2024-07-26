@@ -10,7 +10,7 @@ const data: projectdata[] = [
   {
     name: "Campus Diary",
     photo:
-      "https://private-user-images.githubusercontent.com/92661835/346324473-a130e97f-eead-4ef4-8e65-d9165557a1be.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjE5OTcxOTIsIm5iZiI6MTcyMTk5Njg5MiwicGF0aCI6Ii85MjY2MTgzNS8zNDYzMjQ0NzMtYTEzMGU5N2YtZWVhZC00ZWY0LThlNjUtZDkxNjU1NTdhMWJlLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA3MjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNzI2VDEyMjgxMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWQ3MmNkOTQ3YzYyMTQ2ZjhlOTkzMmMxMmQyYzQyZTU0MTcyZjMzZTlmYTRmYTNhZDhmMDE4ZTFmNDhiMDcyZGImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.w5KGdZkOam4aiVZPcGl64TahOObBn74i72J074LJLKM",
+      "public\\campusdiary.png",
     links: {
       github: "https://github.com/BhoirSujit/CampusDiary",
     },
@@ -18,17 +18,18 @@ const data: projectdata[] = [
   {
     name: "Make A Tour",
     photo:
-      "https://private-user-images.githubusercontent.com/92661835/346325482-8b70e3fc-10de-49a1-8412-71b4554eb0b8.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjE5NTU2MzcsIm5iZiI6MTcyMTk1NTMzNywicGF0aCI6Ii85MjY2MTgzNS8zNDYzMjU0ODItOGI3MGUzZmMtMTBkZS00OWExLTg0MTItNzFiNDU1NGViMGI4LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA3MjYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNzI2VDAwNTUzN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTdmNzI1YzllNGM2OWY0OWQyYjM2MmVlOWQ5MGQ1ZDJiYTVkZmZmZWMzN2JkNDE3MjNkNjU4YjJhYTY4MTQ0ZTcmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.AQrV6RKkUNajRYzS_4sQj270ZtsfzArwARfnva_wmY8",
+    "public\\makeatour.png",  
     links: {
       github: "https://github.com/BhoirSujit/MakeATour",
     },
   },
+  
 ];
 
 function ProjectView({ ...props }: projectdata) {
   return (
     <div className="w-full relative ">
-      <div className="photo border rounded-2xl h-64 overflow-hidden">
+      <div className="photo border rounded-2xl h-52 md:h-80 lg:h-64 xl:h-96 overflow-hidden">
         <img
           className="w-full h-full object-cover hover:scale-125 transition-all ease-in-out delay-100"
           src={props.photo}
@@ -67,17 +68,17 @@ function ProjectView({ ...props }: projectdata) {
 
 export default function Projects() {
   return (
-    <section id="projects" className="mx-10 lg:mx-60 ">
-      <h2 className="ml-10 pl-4 font-bold text-lg border-l-8 border-black mt-10">
+    <section id="projects" className="mx-0 lg:mx-20 lg:py-0 xl:mx-32 xl:py-10">
+      <h2 className="ml-8 pl-4 font-bold text-lg border-l-8 border-black mt-10">
         Projects
       </h2>
 
-      <div className="p-10 grid grid-cols-1 gap-4 lg:grid-cols-2">
+      <div className="p-8 grid grid-cols-1 gap-4 xl:gap-8 lg:grid-cols-2">
         {data.map((pd, i) => (
           <ProjectView key={i} {...pd} />
         ))}
       </div>
-      <hr />
+    
     </section>
   );
 }

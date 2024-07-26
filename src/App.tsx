@@ -11,7 +11,7 @@ function App() {
 
 
   return (
-   <main>
+   <main className='overflow-x-hidden 2xl:mx-20'>
    <Header />
    <Hero />
    <About />

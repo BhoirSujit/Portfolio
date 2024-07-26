@@ -1,8 +1,8 @@
 export default function Hero() {
   return (
-    <section className="mx-10 lg:mx-60 lg:py-40">
-      <div className=" grid grid-cols-1 place-content-center w-full md:grid-cols-2">
-        <div className="p-10 xl:px-40 md:order-2 w-full h-full">
+    <section className="mx-0 lg:mx-20 lg:py-10 xl:mx-52 xl:py-10">
+      <div className=" grid grid-cols-1 place-content-center w-full lg:grid-cols-2">
+        <div className="p-8 md:pt-32 md:pb-10 lg:p-14 xl:px-10  lg:order-2 w-full h-full">
           <div className="bg-blue-100 aspect-square w-full h-full rounded-full relative">
             <img
               className="rounded-b-full absolute bottom-0 left-auto w-full 
@@ -13,7 +13,7 @@ export default function Hero() {
             />
           </div>
         </div>
-        <div className="p-10 md:order-1 w-full h-full flex justify-center flex-col">
+        <div className="p-8 md:py-14 lg:order-1 w-full h-full flex justify-center flex-col">
           <div className="w-full flex flex-col">
             <div>
               <span className="text-blue-600 font-bold">Hey, my name is</span>
@@ -30,7 +30,7 @@ export default function Hero() {
             <div className="mt-4">
               <ul className="handles flex gap-2">
                 <li>
-                  <a href="#">
+                  <a href="https://www.linkedin.com/in/bhoirsujit/">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
@@ -40,7 +40,7 @@ export default function Hero() {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://github.com/BhoirSujit">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
@@ -50,7 +50,7 @@ export default function Hero() {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.instagram.com/bsujit004/">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
@@ -60,7 +60,7 @@ export default function Hero() {
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.facebook.com/sujit.bhoir.5070/">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
@@ -71,8 +71,8 @@ export default function Hero() {
                 </li>
               </ul>
             </div>
-            <div className="mt-4 flex">
-              <button className="flex align-middle gap-4 bg-black text-white py-2 px-4 border border-black rounded-md transition-all ease-in-out delay-100 hover:bg-transparent hover:text-black">
+            <div className="mt-2 flex flex-wrap gap-2">
+              <a href="public\SujitBhoircv.pdf" download="Sujit Bhoir CV.pdf" className="flex align-middle gap-4  bg-black text-white py-2 px-4 border border-black rounded-md transition-all ease-in-out delay-100 hover:bg-transparent hover:text-black">
                 <span> Download CV </span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -88,8 +88,8 @@ export default function Hero() {
                     d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
                   />
                 </svg>
-              </button>
-              <button className="flex align-middle gap-4 ml-5 bg-transparent text-black py-2 px-4 border border-black rounded-md transition-all ease-in-out delay-100 hover:bg-black hover:text-white">
+              </a>
+              <a href="#contact" className="flex align-middle gap-4  bg-transparent text-black py-2 px-4 border border-black rounded-md transition-all ease-in-out delay-100 hover:bg-black hover:text-white">
                 <span>Contact Me </span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +105,7 @@ export default function Hero() {
                     d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
                   />
                 </svg>
-              </button>
+              </a>
             </div>
           </div>
         </div>

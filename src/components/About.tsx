@@ -1,8 +1,8 @@
 export default function About() {
   return (
-    <section id="about" className="mx-10 lg:mx-60 ">
-      <div className="grid grid-cols-1 justify-center   lg:grid-cols-2">
-        <div className="p-10 order-2 lg:order-1 flex  h-full w-full">
+    <section id="about" className="mx-0 lg:mx-20 lg:py-0 xl:mx-32 xl:py-10">
+      <div className="grid grid-cols-1 justify-center   xl:grid-cols-2">
+        <div className="p-8 order-2 xl:order-1 flex  h-full w-full">
           <div className="console border w-full h-full flex flex-col">
             <div className="head  border-b p-2 flex justify-between align-middle">
               <ul className="start flex gap-2  ">
@@ -45,8 +45,8 @@ export default function About() {
                 </li>
               </ul>
 
-              <div className="name">
-                <div className="border rounded-lg px-24 flex gap-2 p-1">
+              <div className="name hidden sm:block">
+                <div className="border rounded-lg px-32 flex gap-2 p-1">
                   <span>
                     {" "}
                     <svg
@@ -64,7 +64,7 @@ export default function About() {
                       />
                     </svg>
                   </span>
-                  <span> Porfolio</span>
+                  <span > Porfolio</span>
                 </div>
               </div>
               <ul className="flex gap-4 px-2">
@@ -160,16 +160,7 @@ export default function About() {
                     <li>8</li>
                     <li>9</li>
                     <li>10</li>
-                    <li>11</li>
-                    <li>12</li>
-                    <li>13</li>
-                    <li>14</li>
-                    <li>15</li>
-                    <li>16</li>
-                    <li>17</li>
-                    <li>18</li>
-                    <li>19</li>
-                    <li>20</li>
+                   
                   </ul>
                   <div className="e">
                     <p>const name: string = 'Sujit Bhoir';</p>
@@ -187,7 +178,7 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className="p-10 flex order-1 flex-col lg:order-2  w-full">
+        <div className="p-8 flex order-1 flex-col xl:order-2  w-full">
          
           <h2 className="text-xl font-bold border-l-8 pl-4 border-black  mb-4">About Me</h2>
           <div>
@@ -197,7 +188,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <hr />
+      
     </section>
   );
 }

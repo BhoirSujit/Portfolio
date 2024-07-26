@@ -1,7 +1,7 @@
 export default function Skills() {
   return (
-    <section id="skills" className="mx-10 lg:mx-60">
-      <h2 className="ml-10 pl-4 font-bold text-lg border-l-8 border-black mt-10">
+    <section id="skills" className="mx-0 lg:mx-20 lg:py-0 xl:mx-32 xl:py-10">
+      <h2 className="ml-8 pl-4 font-bold text-lg border-l-8 border-black mt-10">
         Skills
       </h2>
       <div className="slider p-10 ">
@@ -122,7 +122,7 @@ export default function Skills() {
 
         <div></div>
       </div>
-      <hr className="mb-10" />
+      
     </section>
   );
 }
