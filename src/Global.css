@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+  :root {
+  --color-bg-primary:  #0f172a;
+  --color-primary: white;
+  --color-secondary: #64748b;
+  --color-text-base: red;
+  }
+}
+
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+}
+
+.visibleimp {
+  display: block !important;
+}
+
+ul.handles li a svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.marquee {
+  animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
