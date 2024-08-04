@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section className="mx-0 lg:mx-20 lg:py-10 xl:mx-52 xl:py-10">
       <div className=" grid grid-cols-1 place-content-center w-full lg:grid-cols-2">
-        <div className="p-12 sm:20 md:px-48 md:pt-32 md:pb-10 lg:p-14 xl:px-10 2xl:px-52  lg:order-2 w-full h-full">
+        <div className="p-12 sm:20 md:px-48 md:pt-32 md:pb-10 lg:p-14 xl:px-10 2xl:px-20  lg:order-2 w-full h-full">
           <div className="bg-blue-100 aspect-square w-full h-full rounded-full relative">
             <img
               className="rounded-b-full absolute bottom-0 left-auto w-full 
