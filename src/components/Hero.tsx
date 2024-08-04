@@ -72,7 +72,7 @@ export default function Hero() {
               </ul>
             </div>
             <div className="mt-2 flex flex-wrap gap-2">
-              <a href="public\SujitBhoircv.pdf" download="Sujit Bhoir CV.pdf" className="flex align-middle gap-4  bg-black text-white py-2 px-4 border border-black rounded-md transition-all ease-in-out delay-100 hover:bg-transparent hover:text-black">
+              <a href="SujitBhoircv.pdf" download="Sujit Bhoir CV.pdf" className="flex align-middle gap-4  bg-black text-white py-2 px-4 border border-black rounded-md transition-all ease-in-out delay-100 hover:bg-transparent hover:text-black">
                 <span> Download CV </span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
