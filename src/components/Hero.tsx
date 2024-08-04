@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section className="mx-0 lg:mx-20 lg:py-10 xl:mx-52 xl:py-10">
       <div className=" grid grid-cols-1 place-content-center w-full lg:grid-cols-2">
-        <div className="p-8 md:pt-32 md:pb-10 lg:p-14 xl:px-10  lg:order-2 w-full h-full">
+        <div className="p-12 sm:20 md:px-48 md:pt-32 md:pb-10 lg:p-14 xl:px-10 2xl:px-52  lg:order-2 w-full h-full">
           <div className="bg-blue-100 aspect-square w-full h-full rounded-full relative">
             <img
               className="rounded-b-full absolute bottom-0 left-auto w-full 
@@ -30,7 +30,7 @@ export default function Hero() {
             <div className="mt-4">
               <ul className="handles flex gap-2">
                 <li>
-                  <a href="https://www.linkedin.com/in/bhoirsujit/">
+                  <a href="https://www.linkedin.com/in/bhoirsujit/" target="_blank">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
@@ -40,7 +40,7 @@ export default function Hero() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://github.com/BhoirSujit">
+                  <a href="https://github.com/BhoirSujit" target="_blank">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
@@ -50,7 +50,7 @@ export default function Hero() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/bsujit004/">
+                  <a href="https://www.instagram.com/bsujit004/" target="_blank">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
@@ -60,7 +60,7 @@ export default function Hero() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.facebook.com/sujit.bhoir.5070/">
+                  <a href="https://www.facebook.com/sujit.bhoir.5070/" target="_blank">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"

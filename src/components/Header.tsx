@@ -1,6 +1,8 @@
 export default function Header() {
   const handleMenuToggle = () => {
+    console.log('i got pressed');
     document.getElementById("menu-toggle")?.classList.toggle("left-0");
+    document.getElementById("menu-toggle")?.classList.toggle("left-full");
   };
 
   return (
@@ -32,9 +34,9 @@ export default function Header() {
             </button>
             <ul
               id="menu-toggle"
-              className="flex gap-6 items-center flex-col absolute  top-full  w-full pl-10 py-10 
-             transition-all ease-in-out delay-100 left-full
-            md:flex-row md:static md:visibleimp md:py-0 md:h-full bg-white z-30"
+              className=" left-full flex gap-6 items-center flex-col absolute  top-full  w-full pl-10 py-10 
+             transition-all ease-in-out delay-100 
+            md:flex-row md:static md:visibleimp md:py-0 md:h-full bg-white z-30 "
             >
               <li className=" md:block">
                 <a href="#about">About</a>
