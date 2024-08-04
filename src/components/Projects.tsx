@@ -10,7 +10,7 @@ const data: projectdata[] = [
   {
     name: "Campus Diary",
     photo:
-      "public\\campusdiary.png",
+      "campusdiary.png",
     links: {
       github: "https://github.com/BhoirSujit/CampusDiary",
     },
@@ -18,7 +18,7 @@ const data: projectdata[] = [
   {
     name: "Make A Tour",
     photo:
-    "public\\makeatour.png",  
+    "makeatour.png",  
     links: {
       github: "https://github.com/BhoirSujit/MakeATour",
     },
