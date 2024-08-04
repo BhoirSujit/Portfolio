@@ -8,7 +8,7 @@ export default function Hero() {
               className="rounded-b-full absolute bottom-0 left-auto w-full 
                
                "
-              src="src\assets\profilepic.png"
+              src="profilepic.png"
               alt="profile pic"
             />
           </div>
