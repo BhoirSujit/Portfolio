@@ -1,8 +1,6 @@
-import { ChangeEvent, useEffect, useState } from "react";
-import SyntaxHighlighter, { Light, PrismAsyncLight } from "react-syntax-highlighter";
-import { kimbieLight } from "react-syntax-highlighter/dist/cjs/styles/hljs";
-import {a11yLight, arduinoLight, atomOneLight, gruvboxLight, solarizedLight} from "react-syntax-highlighter/dist/esm/styles/hljs";
-import { materialLight, oneLight } from "react-syntax-highlighter/dist/esm/styles/prism";
+
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { a11yLight } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 const data = `const about = {
     name: "Sujit Bhoir",
@@ -15,15 +13,15 @@ const data = `const about = {
 }`;
 
 export default function CodeEditor() {
-  const [code, setCode] = useState<string>("");
+  //   const [code, setCode] = useState<string>("");
 
-  const handleChange = (event: ChangeEvent<HTMLTextAreaElement>) => {
-    setCode(event.target.value);
-  };
+  //   const handleChange = (event: ChangeEvent<HTMLTextAreaElement>) => {
+  //     setCode(event.target.value);
+  //   };
 
-  useEffect(() => {
-    setCode(data);
-  }, []);
+//   useEffect(() => {
+//     setCode(data);
+//   }, []);
 
   return (
     <div className="console rounded-lg border w-full h-full flex flex-col">
@@ -180,9 +178,8 @@ export default function CodeEditor() {
                 </div>
               ))}
             </div> */}
-            <SyntaxHighlighter 
-             
-                className="flex-1"
+            <SyntaxHighlighter
+              className="flex-1"
               language="javascript"
               showLineNumbers
               style={a11yLight}
