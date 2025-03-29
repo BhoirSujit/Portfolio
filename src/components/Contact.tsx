@@ -1,6 +1,6 @@
 import emailjs from "@emailjs/browser";
 import { FormEvent, useState} from "react";
-import Button from "./ui/Button";
+
 
 export default function Contact() {
   const [name, setName] = useState("");

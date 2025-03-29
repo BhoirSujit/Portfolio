@@ -1,4 +1,4 @@
-import Marquee from "react-fast-marquee";
+
 
 type propsT = {
   svg: string;
