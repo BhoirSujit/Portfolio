@@ -1,5 +1,6 @@
 import emailjs from "@emailjs/browser";
 import { FormEvent, useState} from "react";
+import Button from "./ui/Button";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -58,9 +59,9 @@ export default function Contact() {
         <div className="">
           <form 
             onSubmit={handleOnSumbit}
-            className="flex flex-col gap-3 border p-7 rounded-md"
+            className="flex flex-col gap-3 border p-7 rounded-xl"
           >
-            <span className="block ">
+            <span className="block font-medium">
               Feel Free to ask me, i am open to work
             </span>
             <div>
@@ -68,7 +69,7 @@ export default function Contact() {
                 Your Name
               </label>
               <input
-                className="w-full p-2  focus:outline-none border mt-2"
+                className="w-full p-2 rounded-lg  focus:outline-none border mt-2"
                 type="text"
                 name="user_name"
                 id="name"
@@ -80,7 +81,7 @@ export default function Contact() {
                 Your Email
               </label>
               <input
-                className="w-full p-2 focus:outline-none border mt-2"
+                className="w-full p-2 rounded-lg focus:outline-none border mt-2"
                 type="email"
                 name="user_email"
                 id="email"
@@ -92,7 +93,7 @@ export default function Contact() {
                 Your Message
               </label>
               <textarea
-                className="w-full p-2 focus:outline-none border mt-2  resize-none"
+                className="w-full p-2 rounded-lg focus:outline-none border mt-2  resize-none"
                 rows={4}
                 name="message"
                 id="message"
@@ -100,12 +101,14 @@ export default function Contact() {
               ></textarea>
             </div>
 
+           
+
             <button
               type="submit"
               className="
                         mt-10 flex justify-center gap-2 items-center
-                        border border-black  bg-black text-white rounded-md px-2 py-1.5 
-                       transition ease-in-out delay-100 hover:bg-white hover:text-black
+                        border border-black  bg-black text-white rounded-lg px-2 py-1.5 
+                       transition ease-in-out delay-100 hover:bg-opacity-85
                        "
             >
               Send Message{" "}

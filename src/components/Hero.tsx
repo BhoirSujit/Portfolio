@@ -1,3 +1,5 @@
+import Button from "./ui/Button";
+
 export default function Hero() {
   return (
     <section className="mx-0 lg:mx-20 lg:py-10 xl:mx-52 xl:py-10">
@@ -30,7 +32,10 @@ export default function Hero() {
             <div className="mt-4">
               <ul className="handles flex gap-2">
                 <li>
-                  <a href="https://www.linkedin.com/in/bhoirsujit/" target="_blank">
+                  <a
+                    href="https://www.linkedin.com/in/bhoirsujit/"
+                    target="_blank"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
@@ -50,7 +55,10 @@ export default function Hero() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/bsujit004/" target="_blank">
+                  <a
+                    href="https://www.instagram.com/bsujit004/"
+                    target="_blank"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
@@ -60,7 +68,10 @@ export default function Hero() {
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.facebook.com/sujit.bhoir.5070/" target="_blank">
+                  <a
+                    href="https://www.facebook.com/sujit.bhoir.5070/"
+                    target="_blank"
+                  >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 448 512"
@@ -72,7 +83,15 @@ export default function Hero() {
               </ul>
             </div>
             <div className="mt-2 flex flex-wrap gap-2">
-              <a href="SujitBhoircv.pdf" download="Sujit Bhoir CV.pdf" className="flex align-middle gap-4  bg-black text-white py-2 px-4 border border-black rounded-md transition-all ease-in-out delay-100 hover:bg-transparent hover:text-black">
+              <Button handleOnClick={() => {
+                  const resumeUrl = "/Sujit_Resume_v6.pdf"; // Adjust the file name if necessary
+                  const link = document.createElement("a");
+                  link.href = resumeUrl;
+                  link.download = "Sujit_Resume_v6.pdf"; // Suggested filename for the download
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+              }}>
                 <span> Download CV </span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -88,8 +107,18 @@ export default function Hero() {
                     d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3"
                   />
                 </svg>
-              </a>
-              <a href="#contact" className="flex align-middle gap-4  bg-transparent text-black py-2 px-4 border border-black rounded-md transition-all ease-in-out delay-100 hover:bg-black hover:text-white">
+              </Button>
+              {/* <a
+                href="SujitBhoircv.pdf"
+                download="Sujit Bhoir CV.pdf"
+                className="flex align-middle gap-4  bg-black text-white py-2 px-4 border border-black rounded-md transition-all ease-in-out delay-100 hover:bg-transparent hover:text-black"
+              ></a> */}
+              <Button
+                variant="secondary"
+                handleOnClick={() => {
+                  window.location.href = "#contact";
+                }}
+              >
                 <span>Contact Me </span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +134,13 @@ export default function Hero() {
                     d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
                   />
                 </svg>
-              </a>
+              </Button>
+              {/* <a
+                href="#contact"
+                className="flex align-middle gap-4  bg-transparent text-black py-2 px-4 border border-black rounded-md transition-all ease-in-out delay-100 hover:bg-black hover:text-white"
+              >
+               
+              </a> */}
             </div>
           </div>
         </div>

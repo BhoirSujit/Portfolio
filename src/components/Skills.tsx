@@ -1,4 +1,3 @@
-
 import Marquee from "react-fast-marquee";
 
 type propsT = {
@@ -8,8 +7,8 @@ type propsT = {
 
 const data: propsT[] = [
   {
-    svg: '/java.svg',
-    name: 'Java'
+    svg: "/java.svg",
+    name: "Java",
   },
   {
     svg: "/html.svg",
@@ -52,23 +51,27 @@ const data: propsT[] = [
     name: "Tailwind",
   },
   {
-    svg: '/excel.svg',
-    name: 'MS Excel'
+    svg: "/excel.svg",
+    name: "MS Excel",
   },
   {
-    svg: '/word.svg',
-    name: 'MS Word'
-  }
+    svg: "/word.svg",
+    name: "MS Word",
+  },
 ];
 
 function SkillHolder({ ...props }: propsT) {
   return (
     <>
       <div
-        className="skill-item border items-center p-2 mx-2  w-24 h-32 flex flex-col  gap-2 
-      hover:scale-110 duration-300 ease-in-out"
+        className="skill-item rounded-lg border items-center p-2 mx-2 flex   gap-2 
+      hover:scale-[103%] duration-300 ease-in-out m-2"
       >
-        <img className="aspect-square  p-2 " src={props.svg} alt="" />
+        <img
+          className="aspect-square  p-2  w-16 h-16 "
+          src={props.svg}
+          alt=""
+        />
         <div>{props.name}</div>
       </div>
     </>
@@ -76,15 +79,19 @@ function SkillHolder({ ...props }: propsT) {
 }
 
 export default function Skills() {
-  
-
   return (
     <section id="skills" className="mx-0 lg:mx-20 lg:py-0 xl:mx-32 xl:py-10">
       <h2 className="ml-8 pl-4 font-bold text-lg border-l-8 border-black mt-10">
         Skills
       </h2>
-      <div className="slider p-10 ">
-        <div className="marquee-wrapper ">
+      <div className="slider p-10 grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3">
+        {data.map((d, i) => (
+          <div>
+            <SkillHolder key={i} {...d}></SkillHolder>
+          </div>
+        ))}
+
+        {/* <div className="marquee-wrapper ">
           <Marquee className="py-2 overflow-hidden" loop={0} direction="left" pauseOnHover  gradient gradientWidth={100} gradientColor="white" >
             {data.map((d, i) => (
               <div>
@@ -94,7 +101,7 @@ export default function Skills() {
           </Marquee>
 
          
-        </div>
+        </div> */}
 
         <div></div>
       </div>

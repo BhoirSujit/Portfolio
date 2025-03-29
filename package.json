@@ -18,6 +18,7 @@
   "devDependencies": {
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "@types/react-syntax-highlighter": "^15.5.13",
     "@typescript-eslint/eslint-plugin": "^7.15.0",
     "@typescript-eslint/parser": "^7.15.0",
     "@vitejs/plugin-react": "^4.3.1",
@@ -26,9 +27,10 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.7",
     "postcss": "^8.4.40",
-    "tailwind": "^4.0.0",
+    "react-syntax-highlighter": "^15.6.1",
+    "tailwind": "^2.3.1",
     "tailwindcss": "^3.4.6",
     "typescript": "^5.2.2",
-    "vite": "^5.3.4"
+    "vite": "^6.2.3"
   }
 }
