@@ -25,6 +25,15 @@ const data: projectdata[] = [
     },
   },
   {
+    name: "2D shotting game",
+    des: "top down shoter game with python",
+    photo: "2d Shooter Game 2024-08-13 22-11-41.gif",
+    links: {
+      github: "https://github.com/BhoirSujit/2d-shotting-pygame",
+    },
+  }
+  ,
+  {
     name: "GupShup",
     des: "chating app",
     photo: "makeatour.png",
