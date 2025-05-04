@@ -8,10 +8,10 @@ type PropsType = {
 
 const Button = ({ handleOnClick, children, variant = "primary" }: PropsType) => {
   const baseStyles =
-    "flex align-middle gap-4 py-2 px-4 border rounded-lg transition-all ease-in-out delay-100";
+    "flex align-middle gap-4 py-2 px-4 border shadow-md  rounded-lg transition-all ease-in-out delay-100";
   
   const variantStyles = {
-    primary: "bg-black text-white border-black hover:bg-opacity-85",
+    primary: "bg-black text-white border-black  hover:bg-opacity-85",
     secondary: "bg-white text-black border-black hover:bg-gray-200",
   };
 

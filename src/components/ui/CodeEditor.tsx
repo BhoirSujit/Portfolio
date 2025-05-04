@@ -1,4 +1,3 @@
-
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { a11yLight } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
@@ -19,12 +18,12 @@ export default function CodeEditor() {
   //     setCode(event.target.value);
   //   };
 
-//   useEffect(() => {
-//     setCode(data);
-//   }, []);
+  //   useEffect(() => {
+  //     setCode(data);
+  //   }, []);
 
   return (
-    <div className="console rounded-lg border w-full h-full flex flex-col">
+    <div className="console rounded-xl shadow-md border w-full h-full flex flex-col">
       <div className="head  border-b p-2 flex justify-between align-middle">
         <ul className="start flex gap-2">
           <li className="p-1 rounded-md  hover:bg-slate-50">
@@ -169,7 +168,7 @@ export default function CodeEditor() {
               <li className="border-r p-1 bg-slate-50">Sujit.ts ⨉</li>
             </ul>
           </div>
-          <div className="bodyeditor flex overflow-auto">
+          <div className="bodyeditor flex ">
             {/* Line Numbers */}
             {/* <div className="pr-4 p-2 text-gray-400 text-right select-none">
               {code.split("\n").map((_, i) => (
@@ -179,7 +178,8 @@ export default function CodeEditor() {
               ))}
             </div> */}
             <SyntaxHighlighter
-              className="flex-1"
+              wrapLongLines={true}
+              className=""
               language="javascript"
               showLineNumbers
               style={a11yLight}

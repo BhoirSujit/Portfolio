@@ -7,9 +7,7 @@ export default function Hero() {
         <div className="p-12 sm:px-20 md:px-48 md:pt-32 md:pb-10 lg:p-14 xl:px-10 2xl:px-20  lg:order-2 w-full h-full">
           <div className="bg-blue-100 aspect-square w-full h-full rounded-full relative">
             <img
-              className="rounded-b-full absolute bottom-0 left-auto w-full 
-               
-               "
+              className="rounded-b-full absolute bottom-0 left-auto w-full"
               src="profilepic.png"
               alt="profile pic"
             />

@@ -59,7 +59,7 @@ export default function Contact() {
         <div className="">
           <form 
             onSubmit={handleOnSumbit}
-            className="flex flex-col gap-3 border p-7 rounded-xl"
+            className="flex flex-col gap-3 border p-7 rounded-2xl shadow-md"
           >
             <span className="block font-medium">
               Feel Free to ask me, i am open to work

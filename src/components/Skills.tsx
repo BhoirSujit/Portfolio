@@ -1,54 +1,64 @@
-
-
 type propsT = {
   svg: string;
   name: string;
+  cat?: "frontend" | "backend" | "database";
 };
 
 const data: propsT[] = [
   {
     svg: "/java.svg",
     name: "Java",
+    cat: "backend",
   },
   {
     svg: "/html.svg",
     name: "HTML",
+    cat: "frontend",
   },
   {
     svg: `/css.svg`,
     name: "CSS",
+    cat: "frontend",
   },
   {
     svg: `/javascript.svg`,
     name: "JavaScript",
+    cat: "frontend",
   },
   {
     svg: "/typescript.svg",
     name: "TypeScript",
+    cat: "frontend",
   },
   {
     svg: "/react.svg",
     name: "React",
+    cat: "frontend",
   },
   {
     svg: "/sql.svg",
     name: "SQL",
+    cat: "database",
   },
   {
     svg: "/mongodb.svg",
     name: "MongoDB",
+    cat: "database",
   },
   {
     svg: "/nodejs.svg",
     name: "NodeJs",
+    cat: "backend",
   },
   {
     svg: "/bootstrap.svg",
     name: "Bootstrap",
+    cat: "frontend",
   },
   {
     svg: "/tailwind.svg",
     name: "Tailwind",
+    cat: "frontend",
   },
   {
     svg: "/excel.svg",
@@ -69,7 +79,7 @@ function SkillHolder({ ...props }: propsT) {
       >
         <img
           className="aspect-square  p-2  w-16 h-16 "
-          src={props.svg}
+          src={"/skills" + props.svg}
           alt=""
         />
         <div>{props.name}</div>
@@ -84,6 +94,50 @@ export default function Skills() {
       <h2 className="ml-8 pl-4 font-bold text-lg border-l-8 border-black mt-10">
         Skills
       </h2>
+
+      {/* <div className="slider p-10 ">
+        <div className="canvas border rounded-md p-4">
+          <div className=" border rounded-md m-2 ">
+            <h2 className="border-b p-2">Frontend</h2>
+            <div className="skills ">
+              {data.map((d, i) => {
+                return <>{d.cat === "frontend" ? <>
+                <div className="inline-block">
+                  <img className="w-12 p-1" src={"/skills"+d.svg} alt="tech" />
+                </div>
+                </> : ""}</>;
+              })}
+            </div>
+          </div>
+
+          <div className="border rounded-md  m-2">
+            <h2 className="border-b p-2">Backend</h2>
+            <div className="skills ">
+              {data.map((d, i) => {
+                return <>{d.cat === "backend" ? <>
+                <div className="inline-block">
+                  <img className="w-12 p-1" src={"/skills"+d.svg} alt="tech" />
+                </div>
+                </> : ""}</>;
+              })}
+            </div>
+          </div>
+
+          <div className="border rounded-md  m-2 ">
+            <h2 className="border-b p-2">Database</h2>
+            <div className="skills ">
+              {data.map((d, i) => {
+                return <>{d.cat === "database" ? <>
+                <div className="inline-block">
+                  <img className="w-12 p-1" src={"/skills"+d.svg} alt="tech" />
+                </div>
+                </> : ""}</>;
+              })}
+            </div>
+          </div>
+        </div>
+      </div> */}
+
       <div className="slider p-10 grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-3">
         {data.map((d, i) => (
           <div>
@@ -102,8 +156,6 @@ export default function Skills() {
 
          
         </div> */}
-
-        <div></div>
       </div>
     </section>
   );
