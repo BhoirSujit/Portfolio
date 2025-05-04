@@ -31,6 +31,14 @@ const data: projectdata[] = [
     links: {
       github: "https://github.com/BhoirSujit/2d-shotting-pygame",
     },
+  },
+  {
+    name: "Student Management System",
+    des: "tkint",
+    photo: "studentmanagementsystem.png",
+    links: {
+      github: "https://github.com/BhoirSujit/Student-Management-System",
+    },
   }
   ,
   {
@@ -58,6 +66,8 @@ const data: projectdata[] = [
       github: "https://github.com/BhoirSujit/Text-Summariser",
     },
   }
+
+
 
 
 ];
